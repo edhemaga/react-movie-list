@@ -4,7 +4,8 @@ import axios from 'axios';
 
 const App = () => {
   const [data, setData] = useState([]);
-
+  
+  //Ovo je neki komentar
   
   useEffect(async () => {
     const response = await axios.get('https://jsonplaceholder.typicode.com/todos');
@@ -18,4 +19,5 @@ const App = () => {
     }
   </div>
 }
+
 export default App;
