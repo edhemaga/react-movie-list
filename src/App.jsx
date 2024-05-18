@@ -5,6 +5,7 @@ import axios from 'axios';
 const App = () => {
   const [data, setData] = useState([]);
 
+  
   useEffect(async () => {
     const response = await axios.get('https://jsonplaceholder.typicode.com/todos');
     setData(response.data);
